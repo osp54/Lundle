@@ -33,5 +33,5 @@ jobs:
       - name: Save Binary (name based on target)
         uses: actions/upload-artifact@v3
         with:
-          name: lua_obfuscator-${{ matrix.platform.target }}
+          name: lundle-${{ matrix.platform.target }}
           path: target/${{ matrix.platform.target }}/release/lundle.exe
