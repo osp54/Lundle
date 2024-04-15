@@ -34,4 +34,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: lundle-${{ matrix.platform.target }}
-          path: target/${{ matrix.platform.target }}/release/lundle.exe
+          path: target/${{ matrix.platform.target }}/release/lundle{{".exe" if matrix.platform.os == 'windows-latest' else ""}}
